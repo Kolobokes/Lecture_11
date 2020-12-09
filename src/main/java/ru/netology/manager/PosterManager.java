@@ -16,6 +16,12 @@ public class PosterManager {
         this.numberOfFilmsToBeShown = 10;
     }
 
+    public PosterManager(
+            int numberOfFilmsToBeShown
+    ){
+        this.numberOfFilmsToBeShown = numberOfFilmsToBeShown;
+    }
+
     public void addFilm(NewFilm film){
         int length = films.length + 1;
         NewFilm[] tmp = new NewFilm[length];
